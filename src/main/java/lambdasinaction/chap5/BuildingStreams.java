@@ -55,7 +55,7 @@ public class BuildingStreams {
    
 
         IntSupplier fib = new IntSupplier(){
-                  private int previous = 0;
+                  private int previous = 0;//todo cjj 字段可以随意命名？
                   private int current = 1;
                   public int getAsInt(){
                       int nextValue = this.previous + this.current;
