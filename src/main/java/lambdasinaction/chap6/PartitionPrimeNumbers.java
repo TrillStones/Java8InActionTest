@@ -26,7 +26,7 @@ public class PartitionPrimeNumbers {
                 .noneMatch(i -> candidate % i == 0);
     }
 
-    public static Map<Boolean, List<Integer>> partitionPrimesWithCustomCollector(int n) {
+    public static Map<Boolean, List<Integer>> partitionPrimesWithCustomCollector(int n) { //todo cjj 如何实现一个Collector？
         return IntStream.rangeClosed(2, n).boxed().collect(new PrimeNumbersCollector());
     }
 
