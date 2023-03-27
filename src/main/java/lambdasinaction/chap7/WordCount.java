@@ -13,7 +13,7 @@ public class WordCount {
 
     public static void main(String[] args) {
         System.out.println("Found " + countWordsIteratively(SENTENCE) + " words");
-        System.out.println("Found " + countWords(SENTENCE) + " words");
+        System.out.println("Found " + countWords(SENTENCE) + " words"); //todo cjj 实现原理是啥？
     }
 
     public static int countWordsIteratively(String s) {
