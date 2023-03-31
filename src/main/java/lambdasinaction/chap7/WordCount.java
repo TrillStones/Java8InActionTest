@@ -57,9 +57,9 @@ public class WordCount {
 
         public WordCounter accumulate(Character c) {
             if (Character.isWhitespace(c)) {
-                return lastSpace ? this : new WordCounter(counter, true);
+                return lastSpace ? this : new WordCounter(counter, true);//mark cjj 返回this就是不变的，否则就是使用新的WordCounter
             } else {
-                return lastSpace ? new WordCounter(counter+1, false) : this;
+                return lastSpace ? new WordCounter(counter+1, false) : this;//mark cjj 如果上一个是空格，则说明是一个新单词，加1；否则还是当前的单词
             }
         }
 
